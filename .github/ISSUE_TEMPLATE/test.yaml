@@ -39,10 +39,4 @@ body:
     attributes:
       label: Contact person.
       description: Please assign at least one contact person using the GitHub `@` mention. Add as many stakeholders as you'd like.
-  - type: input
-    id: contacts
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-    validations:
-      required: false
+      value: "Main contact: @\n\nStakeholders:"
