@@ -1,62 +1,50 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: 8.6 Documentation request
+description: Request docs for 8.6
+title: "[REQUEST]: "
+labels: ["8.6-request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
+        Thanks for taking the time to fill out this request!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what needs to be documented.
+      placeholder: I need...
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Relevant information
+      description: Please link to any relevant information, including issues, PRs, demos, conversations, etc.
+      placeholder: How can the docs team learn more about this feature?
+    validations:
+      required: true
+  - type: dropdown
+    id: collaboration
+    attributes:
+      label: Collaboration
+      description: Choose the expected collaboration model
+      options:
+        - 1.0.2 (Default)
+        - The **docs** team will proide the initial content.
+        - The **product** team will provide the initial content.
+        - TBD. The docs and product team will work together to determine the best path forward.
+        - Other (please describe above).
+    validations:
+      required: true
+  - type: textarea
     id: contact
+    attributes:
+      label: Contact person.
+      description: Please assign at least one contact person using the GitHub `@` mention. Add as many stakeholders as you'd like.
+  - type: input
+    id: contacts
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
