@@ -29,11 +29,16 @@ body:
       label: Collaboration
       description: Choose the expected collaboration model
       options:
-        - 1.0.2 (Default)
-        - The **docs** team will proide the initial content.
-        - The **product** team will provide the initial content.
-        - TBD. The docs and product team will work together to determine the best path forward.
-        - Other (please describe above).
+        label:
+          - 1.0.2 (Default)
+        label:
+          - The **docs** team will proide the initial content.
+        label:
+          - The **product** team will provide the initial content.
+        label:
+          - TBD. The docs and product team will work together to determine the best path forward.
+        label:
+          - Other (please describe above).
     validations:
       required: true
   - type: textarea
