@@ -38,8 +38,8 @@ body:
   - type: textarea
     id: contact
     attributes:
-      label: Contact person.
-      description: Please assign at least one contact person using the GitHub `@` mention. Add as many stakeholders as you'd like.
+      label: Point of contact.
+      description: Please assign at least one point of contact using the GitHub `@` mention. Add as many stakeholders as you'd like.
       value: "**Main contact:** @\n\n**Stakeholders:**\n"
     validations:
       required: true
