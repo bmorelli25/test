@@ -34,8 +34,6 @@ body:
         label: The **product** team will provide the initial content.
         label: TBD. The docs and product team will work together to determine the best path forward.
         label: Other (please describe above).
-    validations:
-      required: true
   - type: textarea
     id: contact
     attributes:
