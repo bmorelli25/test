@@ -1,12 +1,12 @@
-name: 8.6 Documentation request
-description: Request docs for 8.6
+name: **8.6** Documentation request
+description: Request a documnetation update for Elastic Stack version 8.6
 title: "[REQUEST]: "
 labels: ["8.6-request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this request!
+        Thanks for taking the time to fill out this request! This form will create an issue that the obs-docs team will triage and prioritize. Filling out this form does not guarantee that your issue will be prioritized for the selected iteration.
   - type: textarea
     id: description
     attributes:
@@ -18,22 +18,23 @@ body:
   - type: textarea
     id: related
     attributes:
-      label: Relevant information
-      description: Please link to any relevant information, including issues, PRs, demos, conversations, etc.
+      label: Resources
+      description: Please link to as many related resources as possible. Think about issues, PRs, demos, Slack threads, etc.
       placeholder: How can the docs team learn more about this feature?
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: collaboration
     attributes:
       label: Collaboration
       description: Choose the expected collaboration model
       options:
-        - 1.0.2 (Default)
-        - The **docs** team will proide the initial content.
-        - The **product** team will provide the initial content.
-        - TBD. The docs and product team will work together to determine the best path forward.
-        - Other (please describe above).
+        label:
+          - 1.0.2 (Default)
+          - The **docs** team will proide the initial content.
+          - The **product** team will provide the initial content.
+          - TBD. The docs and product team will work together to determine the best path forward.
+          - Other (please describe above).
     validations:
       required: true
   - type: textarea
