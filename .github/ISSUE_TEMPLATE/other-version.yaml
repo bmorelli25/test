@@ -23,7 +23,7 @@ body:
       placeholder: How can the docs team learn more about this feature?
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: collaboration
     attributes:
       label: Collaboration
