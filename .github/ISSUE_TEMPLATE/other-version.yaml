@@ -38,7 +38,7 @@ body:
   - type: textarea
     id: contact
     attributes:
-      label: Point of contact.
+      label: Point of contact.z
       description: Please assign at least one point of contact using the GitHub `@` mention. Add as many stakeholders as you'd like.
       value: "**Main contact:** @\n\n**Stakeholders:**\n"
     validations:
