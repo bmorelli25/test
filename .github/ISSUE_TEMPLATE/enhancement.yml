@@ -5,3 +5,10 @@ body:
     attributes:
       value: |
         Thanks for taking the time to suggest an improvement to docs-builder! Please open a discussion topic [here](https://github.com/elastic/docs-builder/discussions/new?category=feature-request).
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Please do not open an issue for your feature request
+      options:
+        - label: Click the link above to open a discussion instead!
+          required: true
