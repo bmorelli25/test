@@ -1,0 +1,7 @@
+name: Feature Request
+description: Suggest an idea for improving docs-builder.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement to docs-builder! Please open a discussion topic [here](https://github.com/elastic/docs-builder/discussions/new?category=feature-request).
